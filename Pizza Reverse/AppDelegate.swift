@@ -3,10 +3,12 @@
 //  Pizza Reverse
 //
 //  Created by Simon Ng on 5/6/2017.
+//  Code written by Jayven Nhan
 //  Copyright © 2017 AppCoda. All rights reserved.
 //
 
 import UIKit
+import Intents
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -41,6 +43,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+        guard let intent = userActivity.interaction?.intent as? INStartWorkoutIntent else {
+            print("AppDelegate: Start Workout Intent - FALSE")
+            return false
+        }
+        print("AppDelegate: Start Workout Intent - TRUE")
+        print(intent)
+        return true
+    }
 }
 

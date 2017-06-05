@@ -12,7 +12,33 @@
 		F4D077E11EE53DB6001B0881 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4D077DF1EE53DB6001B0881 /* Main.storyboard */; };
 		F4D077E31EE53DB6001B0881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D077E21EE53DB6001B0881 /* Assets.xcassets */; };
 		F4D077E61EE53DB6001B0881 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4D077E41EE53DB6001B0881 /* LaunchScreen.storyboard */; };
+		F4D077F51EE54052001B0881 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D077F41EE54052001B0881 /* IntentHandler.swift */; };
+		F4D077F91EE54052001B0881 /* Intents Handler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F4D077F21EE54052001B0881 /* Intents Handler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4D077F71EE54052001B0881 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4D077D01EE53DB5001B0881 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4D077F11EE54052001B0881;
+			remoteInfo = "Intents Handler";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4D077FD1EE54052001B0881 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F4D077F91EE54052001B0881 /* Intents Handler.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F4D077D81EE53DB6001B0881 /* Pizza Reverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pizza Reverse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +48,21 @@
 		F4D077E21EE53DB6001B0881 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4D077E51EE53DB6001B0881 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4D077E71EE53DB6001B0881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4D077ED1EE53DD1001B0881 /* Pizza Reverse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pizza Reverse.entitlements"; sourceTree = "<group>"; };
+		F4D077F21EE54052001B0881 /* Intents Handler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Intents Handler.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4D077F41EE54052001B0881 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		F4D077F61EE54052001B0881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F4D077D51EE53DB6001B0881 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4D077EF1EE54052001B0881 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				F4D077DA1EE53DB6001B0881 /* Pizza Reverse */,
+				F4D077F31EE54052001B0881 /* Intents Handler */,
 				F4D077D91EE53DB6001B0881 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				F4D077D81EE53DB6001B0881 /* Pizza Reverse.app */,
+				F4D077F21EE54052001B0881 /* Intents Handler.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +93,7 @@
 		F4D077DA1EE53DB6001B0881 /* Pizza Reverse */ = {
 			isa = PBXGroup;
 			children = (
+				F4D077ED1EE53DD1001B0881 /* Pizza Reverse.entitlements */,
 				F4D077DB1EE53DB6001B0881 /* AppDelegate.swift */,
 				F4D077DD1EE53DB6001B0881 /* ViewController.swift */,
 				F4D077DF1EE53DB6001B0881 /* Main.storyboard */,
@@ -62,6 +102,15 @@
 				F4D077E71EE53DB6001B0881 /* Info.plist */,
 			);
 			path = "Pizza Reverse";
+			sourceTree = "<group>";
+		};
+		F4D077F31EE54052001B0881 /* Intents Handler */ = {
+			isa = PBXGroup;
+			children = (
+				F4D077F41EE54052001B0881 /* IntentHandler.swift */,
+				F4D077F61EE54052001B0881 /* Info.plist */,
+			);
+			path = "Intents Handler";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +123,34 @@
 				F4D077D41EE53DB6001B0881 /* Sources */,
 				F4D077D51EE53DB6001B0881 /* Frameworks */,
 				F4D077D61EE53DB6001B0881 /* Resources */,
+				F4D077FD1EE54052001B0881 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F4D077F81EE54052001B0881 /* PBXTargetDependency */,
 			);
 			name = "Pizza Reverse";
 			productName = "Pizza Reverse";
 			productReference = F4D077D81EE53DB6001B0881 /* Pizza Reverse.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F4D077F11EE54052001B0881 /* Intents Handler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4D077FA1EE54052001B0881 /* Build configuration list for PBXNativeTarget "Intents Handler" */;
+			buildPhases = (
+				F4D077EE1EE54052001B0881 /* Sources */,
+				F4D077EF1EE54052001B0881 /* Frameworks */,
+				F4D077F01EE54052001B0881 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Intents Handler";
+			productName = "Intents Handler";
+			productReference = F4D077F21EE54052001B0881 /* Intents Handler.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +164,17 @@
 				TargetAttributes = {
 					F4D077D71EE53DB6001B0881 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = YZP52RND5S;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					F4D077F11EE54052001B0881 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = YZP52RND5S;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -114,6 +193,7 @@
 			projectRoot = "";
 			targets = (
 				F4D077D71EE53DB6001B0881 /* Pizza Reverse */,
+				F4D077F11EE54052001B0881 /* Intents Handler */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +209,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4D077F01EE54052001B0881 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,7 +228,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4D077EE1EE54052001B0881 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4D077F51EE54052001B0881 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4D077F81EE54052001B0881 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4D077F11EE54052001B0881 /* Intents Handler */;
+			targetProxy = F4D077F71EE54052001B0881 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F4D077DF1EE53DB6001B0881 /* Main.storyboard */ = {
@@ -259,7 +362,10 @@
 		F4D077EB1EE53DB6001B0881 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Pizza Reverse/Pizza Reverse.entitlements";
+				DEVELOPMENT_TEAM = YZP52RND5S;
 				INFOPLIST_FILE = "Pizza Reverse/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.Pizza-Reverse";
@@ -271,11 +377,40 @@
 		F4D077EC1EE53DB6001B0881 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Pizza Reverse/Pizza Reverse.entitlements";
+				DEVELOPMENT_TEAM = YZP52RND5S;
 				INFOPLIST_FILE = "Pizza Reverse/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.Pizza-Reverse";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F4D077FB1EE54052001B0881 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YZP52RND5S;
+				INFOPLIST_FILE = "Intents Handler/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.Pizza-Reverse.Intents-Handler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F4D077FC1EE54052001B0881 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YZP52RND5S;
+				INFOPLIST_FILE = "Intents Handler/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.Pizza-Reverse.Intents-Handler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -297,6 +432,14 @@
 			buildConfigurations = (
 				F4D077EB1EE53DB6001B0881 /* Debug */,
 				F4D077EC1EE53DB6001B0881 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F4D077FA1EE54052001B0881 /* Build configuration list for PBXNativeTarget "Intents Handler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4D077FB1EE54052001B0881 /* Debug */,
+				F4D077FC1EE54052001B0881 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
